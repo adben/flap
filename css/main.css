@@ -1,16 +1,16 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html,body {
+html, body {
   width: 100%;
   height: 100%;
 }
+
 #canvas {
   display: block;
-  background: url(../img/bg.png);
-  background-repeat: repeat-x;
+  background: url(../img/bg.png) repeat-x;
   background-size: 288px 100%;
   position: fixed;
 
@@ -18,15 +18,19 @@ html,body {
 }
 
 @keyframes animatedBackground {
-  from { background-position: 288px 0; }
-  to { background-position: 0 0; }
+  from {
+    background-position: 288px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
 }
 
 #counter {
   position: absolute;
   color: white;
   font-size: 50px;
-  font-family: 'Flap';
+  font-family: 'Flap', serif;
   top: 30px;
   left: 50%;
   padding: 20px 30px;
@@ -35,7 +39,7 @@ html,body {
 }
 
 @font-face {
-    font-family: 'Flap';
-    src: url('../fonts/flap.ttf');
-    font-weight: bold;
+  font-family: 'Flap';
+  src: url('../fonts/flap.ttf');
+  font-weight: bold;
 }
